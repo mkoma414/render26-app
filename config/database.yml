@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: render26_app_production
-  username: render26_app
-  password: <%= ENV['RENDER26_APP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
